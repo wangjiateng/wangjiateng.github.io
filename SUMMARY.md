@@ -1,3 +1,3 @@
 # Summary
 
-- [README](./README.md)
+- [个人简历](./resume.md)
