@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zh-CN" class="sidebar-visible no-js coal">
+<html lang="zh-CN" class="sidebar-visible no-js rust">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -32,14 +32,13 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-                <link rel="stylesheet" href="css/custom.css">
         
             </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "coal";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -65,7 +64,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('coal')
+            html.classList.remove('rust')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -103,8 +102,8 @@
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -132,7 +131,33 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="王佳腾"><a class="header" href="#王佳腾">王佳腾</a></h1>
+                        <h1 id="个人简历"><a class="header" href="#个人简历">个人简历</a></h1>
+<h2 id="王佳腾"><a class="header" href="#王佳腾">王佳腾</a></h2>
+<p>年龄: 29<br />
+手机: 18311078876<br />
+专业: 计算机应用<br />
+求职: golang</p>
+<h3 id="个人描述"><a class="header" href="#个人描述">个人描述</a></h3>
+<p>熟练掌握Go语言开发<br />
+了解sync/gin/gorm/go-kit等常用包的使用<br />
+了解常用数据结构和算法<br />
+了解tcp/ip协议以及网络编程<br />
+了解linux环境下开发，shell/lua/makefile脚本编写<br />
+了解mysql/redis/mongodb/kafka/es/mqtt/influxdb/ceph等常用系统组件的使用<br />
+了解docker/compose的使用<br />
+了解nginx/kong/treafik的使用<br />
+了解微服务/分布式程序开发<br />
+良好的沟通和表达能力，owner意识</p>
+<h3 id="工作经历"><a class="header" href="#工作经历">工作经历</a></h3>
+<h4 id="2020-072021-07----黑龙江一点通科技有限公司----golang后端"><a class="header" href="#2020-072021-07----黑龙江一点通科技有限公司----golang后端">2020-07~2021-07    黑龙江一点通科技有限公司    golang后端</a></h4>
+<p>公司结合视觉算法打造企业级安全合规平台，为企业提供智能化、可视化的工业级安全合规服务。</p>
+<p>负责工业质检中台的开发工作，提供企业级安全合规解决方案，结合设备、算法、事件、报警、数据统计等多个子模块，展示企业合规信息，并进行定制化功能开发<br />
+负责能力开放平台开发工作，为公司自研工业级算法提供试用平台，作为网关级应用，为算法能力提供鉴权、限流、分发、购买能力，实现算法的商品化</p>
+<h4 id="2018-112020-05----北京食各仁信息科技有限公司----golang后端"><a class="header" href="#2018-112020-05----北京食各仁信息科技有限公司----golang后端">2018-11~2020-05    北京食各仁信息科技有限公司    golang后端</a></h4>
+<p>创业公司，打造属于年轻人的陌生社交app。</p>
+<p>负责十个人app的服务端开发工作，每用户每天都可以系统匹配一个最多十人的聊天室，并且每日晚上11点解散，通过用户在群内的互动和聊天情况，为用户评定当日的聊天角色，比如万人迷/话痨等，用于第二天的更精确匹配，更具评定角色来保证群内至少有1-2位气氛活跃人员来保证每个群的聊天含量，外加同城/广场/闪聊等模块增加用户的曝光机会，并对群内增加互动游戏（狼人杀/双人俄罗斯方块）等增加群内趣味玩法。</p>
+<h4 id="2015-062018-10----北京九号体育网络科技有限公司----java后端"><a class="header" href="#2015-062018-10----北京九号体育网络科技有限公司----java后端">2015-06~2018-10    北京九号体育网络科技有限公司    java后端</a></h4>
+<p>公司以淘宝店铺店主为中心，为店主打造一站式产品调货平台，并转身为专业评测机构，为广大snkrs带来更专业的球鞋/服装专业化拆解报告。</p>
 
                     </main>
 
@@ -151,20 +176,6 @@
 
         </div>
 
-                <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
         
         
